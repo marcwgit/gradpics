@@ -10,7 +10,7 @@ cp full/* inter/.
 cd inter
 mogrify -resize 1800x1800\> *
 #ls -1 >../flist.txt
-find . -maxdepth 1 \( -iname "*jpg" -o -iname "*gif" -o -iname "*.png" \) -type f > ../flist.txt
+#find . -maxdepth 1 \( -iname "*jpg" -o -iname "*gif" -o -iname "*.png" \) -type f > ../flist.txt
 cd ../
 sed  -i 's#\./##g' flist.txt
 mkdir thumb10;
