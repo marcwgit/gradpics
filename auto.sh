@@ -61,13 +61,13 @@ mogrify -resize 50% *
 mogrify * -gravity center -extent 900x900 *
 cd ../
 cd slide200
-mogrify * -resize 200x200 -background white  -gravity center -extent 600x600 -quality 75 *
+mogrify * -resize 200x200 -background white  -gravity center -extent 200x200 -quality 75 *
 cd ../
 cd slide600
 mogrify * -resize 600x600 -background white  -gravity center -extent 600x600 -quality 75 *
 cd ../
 cd slide800
-mogrify * -resize 800x800 -background white  -gravity center -extent 600x600 -quality 85 *
+mogrify * -resize 800x800 -background white  -gravity center -extent 800x800 -quality 85 *
 cd ../
 python picarray.py flist.txt thumb10 full 5 "$title"
 echo "py 10"
